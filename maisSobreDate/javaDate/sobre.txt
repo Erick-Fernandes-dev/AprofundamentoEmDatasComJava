@@ -1,0 +1,79 @@
+java.util.Date
+
+Portanto vamos estudar os seguintes Construtores
+
+Date()
+
+Date(long date)
+
+Date() -> Este construtor vai colocar um objeto da classe Date e o 
+-inicializara com milissegundos mais proximo- do periodo da sua execucao
+
+
+Date(long date) - Diferente do construtor anterior, esse construtor espera
+que voce passe os milissegundos com base padrao de tempo (epoch) que usa como
+-1 de Janeiro de 1970 00:00:00-
+
+Uma pequena pausa... O que e o Epoch?
+
+"O epoch timestamp e um padrao largamente aceito para representar uma 
+data como um inteiro 32-bits a partir do -Unix  Epoch...-"
+
+Vamos testar com base no System.currentTimeMilis()
+
+Esse metodo estatico vai nos retorna o milissegundo mais
+proximo de sua execucao com base no sistema Operacional.
+
+
+-->Metodos Uteis<--
+
+Alguns metodos da classe Date sao muito uteis e serao usados com frequencia durante a manipulacao
+de datas.
+
+sao eles...
+
+-after(Date) - boolean -> Checa se o objeto Data de referencia e posterior
+ao comparado.
+
+-before(Date) - boolean -> Checa se o objeto Date referencia e anterior 
+ao comparado
+
+-compareTo(Date) - int -> Compara dois Objetos Data
+
+-equals(Date) - boolean - Checa se os Objetos sao iguais
+
+-getTime() - long -> Retorna a data em milessegundos
+
+-setTime(long) - void -> Define uma data com base em milissegundos
+
+-from(Instante) - static Date - Define uma data com base em um Instant
+
+-toInstant() - Instant - Retorna um Instant com base em um Date
+
+Classe Instant
+
+- surgiu no JDK 1.8;
+
+- Imutável e thread safe;
+
+- Modelo um ponto instantâneo de uma linha do tempo
+
+- Indicado para gravar marcações temporais em eventos da sua aplicação.
+===================================================================================
+
+       <==(Calendar)==>
+
+-> Já no JDK 1.1 foi observada a necessidade de facilitar alguns
+recurso que a class Date oferecia.
+
+-> Sendo assim, a classe "Calendar" foi criada.
+
+-> Com isso uma série de métodos e Construtores da classe Date foi depreciada.
+Por exemplo o construtor "Date(int year, int month, int date)".
+
+"Calendar" é uma classe abstrata que provê métodos para converter data entre
+um instante específico.
+
+O Calendar possui alguns campos específicos para manipulação
+como MONTH, YEAR, HOUR etc.
+
