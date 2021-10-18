@@ -77,3 +77,46 @@ um instante específico.
 O Calendar possui alguns campos específicos para manipulação
 como MONTH, YEAR, HOUR etc.
 
+--> Imprimindo datas e horas
+
+-Aqui vão algumas maneirasde se converter o resultado de um objeto
+"Calendar"
+
+===================================================================================
+
+==> O java.text.DateFormat <==
+
+-Nesse ponto em que estamos existem, basicamente, duas classes para 
+formatação de datas. o "DateFormat" e o "SimpleDateFormat".
+
+Ambos oferecem maneiras de formatar e parsear a saída das datas.
+
+-Já o "SimpleDateFormat" traz uma grande facilidade que é defeinir um
+padrão de formatação para a saída de data que voce deseja.
+
+===================================================================================
+
+==> Conhecendo date a partir do java 8 <==
+
+--> Datas no Java 8+
+
+-O Java 8 veio com uma série de novidades para facilitar o trabalho
+com datas
+
+-E a grande melhoria está no pacote java.time que foi herdado do 
+projeto Joda Time
+
+-Trabalhar com datas nunca foi tão fácil com esse novo pacote.
+
+-Nele destacam-se três classes:
+-> LocalDate;
+->LocalTime;
+->LocalDateTime;
+
+
+-Basicamente, o que tínhamos até então eram as classes que vimos até agora: Date e Calendar.
+-Com o uso constante, elas se mostram confusas e trabalhosas.
+-Além de serem mutáveis.
+
+-"LocalDate" é uma classe imutável para representar uma data.
+-Seu formato padrão é "yyyy-MM-dd"
