@@ -120,3 +120,16 @@ projeto Joda Time
 
 -"LocalDate" é uma classe imutável para representar uma data.
 -Seu formato padrão é "yyyy-MM-dd"
+
+"LocalTime" é uma classe imutável que representa um padrão de hora-minuto-segundo.
+
+"LocalTime" pode ser representado até o nível de nanosegundos. Exemplo: "12:22:10:123212345"
+
+Sua utilização é similar ao "LocalDate"
+
+"LocalDateTime" funciona como uma espécie de junção entre
+o LocalTime e o LocalDate.
+
+Também é uma classe imutável e você consegue trabalhar com dia e hora de uma só vez.
+
+Você pode manipular a data e hora com precisão de nanosegundo. Exemplo: 2nd October 2007 at 13:45:30:123456789
